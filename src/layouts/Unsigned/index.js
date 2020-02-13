@@ -16,7 +16,13 @@ export default function Unsigned({ children }) {
             <Button>Go back home</Button>
           </Header>
           <Container maxWidth="sm" direction="column">
-            <Box display="flex" flexGrow={1} justifyContent="center" py={4}>
+            <Box
+              display="flex"
+              flexGrow={1}
+              justifyContent="center"
+              py={4}
+              mb={8}
+            >
               <Logo src={logo} alt="logo-icon" />
             </Box>
             {children}
