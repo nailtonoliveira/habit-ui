@@ -1,11 +1,9 @@
 import React from 'react';
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
+import { ChevronCircleLeft } from 'styled-icons/fa-solid';
 
 import logo from '../../assets/logo.png';
 
-import { Background, Header, Root, Logo } from './styles';
+import { Background, Header, Root, MButton, Logo, Container } from './styles';
 
 export default function Unsigned({ children }) {
   return (
@@ -13,10 +11,10 @@ export default function Unsigned({ children }) {
       <Background>
         <Root container direction="column">
           <Header>
-            <Button>Go back home</Button>
+            <MButton startIcon={ChevronCircleLeft}>Go back home</MButton>
           </Header>
-          <Container maxWidth="sm" direction="column">
-            <Box
+          <Container direction="column">
+            {/* <Box
               display="flex"
               flexGrow={1}
               justifyContent="center"
@@ -24,7 +22,7 @@ export default function Unsigned({ children }) {
               mb={8}
             >
               <Logo src={logo} alt="logo-icon" />
-            </Box>
+            </Box> */}
             {children}
           </Container>
         </Root>

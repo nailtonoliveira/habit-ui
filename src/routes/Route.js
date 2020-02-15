@@ -35,6 +35,6 @@ RouteWrapper.defaultProps = {
 };
 
 RouteWrapper.propTypes = {
-  component: PropTypes.element.isRequired,
+  component: PropTypes.node.isRequired,
   isPrivate: PropTypes.bool,
 };
