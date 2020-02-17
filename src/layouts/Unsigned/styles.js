@@ -46,8 +46,3 @@ export const Logo = styled.img`
   height: 64px;
   border-radius: 50%;
 `;
-
-export const Container = styled.div`
-  display: flex;
-  flex-direction: ${props => (props.direction ? props.direction : 'row')};
-`;

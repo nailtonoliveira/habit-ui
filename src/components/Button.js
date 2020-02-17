@@ -6,7 +6,7 @@ const outlined = (theme, color) => css`
   color: ${theme.palette[color].main};
   background-color: transparent;
   border: 1px solid ${theme.palette[color].main};
-  padding: 7px 11px;
+  padding: 9px 15px;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.2);
@@ -27,7 +27,7 @@ const contained = (theme, color) => css`
 const ButtonStyle = styled.button`
   display: flex;
   align-items: center;
-  padding: 12px 16px;
+  padding: 10px 16px;
   transition: background-color 0.25s, color 0.25s;
   border-radius: 30px;
 
